@@ -63,12 +63,13 @@ body {
     overflow-y: auto;
     padding: 1rem;
     color: #000;
-    line-height: 2.5rem;
+    line-height: 2.4rem;
     font-size: 1.5rem;
     text-align: justify;
     font-family: 'Rowdies', cursive;
     font-weight: 100;
     letter-spacing: 2px;
+    word-break: break-all;
 }
 input{
     opacity: 0;
@@ -107,4 +108,26 @@ input{
     50%{
         opacity: 1;
     }
+}
+
+@media (max-width:920px) {
+    .wrap-text {
+        width: 99%;
+    }
+    .try_again {
+        padding: 0.5rem 1rem;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+    }
+    .results{
+        font-size: 0.8rem;
+    }
+    .main{
+        max-height: 60vh;
+        padding: 1rem;
+        line-height: 1.8rem;
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+    
 }
